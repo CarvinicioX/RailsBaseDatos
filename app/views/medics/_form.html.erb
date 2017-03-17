@@ -1,0 +1,37 @@
+<%= form_for(medic) do |f| %>
+  <% if medic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(medic.errors.count, "error") %> prohibited this medic from being saved:</h2>
+
+      <ul>
+      <% medic.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :surname %>
+    <%= f.text_field :surname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :birth_date %>
+    <%= f.date_select :birth_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :specialty %>
+    <%= f.text_field :specialty %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

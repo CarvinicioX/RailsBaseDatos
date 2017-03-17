@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Constancies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pacient</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @constancies.each do |constancy| %>
+      <tr>
+        <td><%= constancy.pacient_id %></td>
+        <td><%= link_to 'Show', constancy %></td>
+        <td><%= link_to 'Edit', edit_constancy_path(constancy) %></td>
+        <td><%= link_to 'Destroy', constancy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Constancy', new_constancy_path %>

@@ -1,0 +1,94 @@
+<%= form_for(expedient) do |f| %>
+  <% if expedient.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(expedient.errors.count, "error") %> prohibited this expedient from being saved:</h2>
+
+      <ul>
+      <% expedient.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group">
+    <%= f.label :"Paciente", class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.number_field :patient_id, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="field form-group">
+    <%= f.label :"Nombre", class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="field form-group">
+    <%= f.label :"Apellido", class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.text_field :surname, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="field form-group">
+    <%= f.label :"Genero", class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.text_field :genre, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="field form-group">
+    <%= f.label :"Estado Civil", class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.text_field :civil_status, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="field form-group">
+    <%= f.label :"Lugar de Nacimiento", class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.text_field :birth_place, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="field form-group">
+    <%= f.label :"Fecha de Nacimiento", class: 'col-sm-2 control-label' %>
+    <div class="col-sm-4">
+      <%= f.date_select :birth_date, {date_separator: "</div><div class='col-sm-3'>"}, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="field form-group">
+    <%= f.label :"Ocupacion", class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.text_field :occupation, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="field form-group">
+    <%= f.label :"Tipo de Sangre", class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.text_field :blood_type, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="field form-group">
+    <%= f.label :"Direccion", class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.text_field :address, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="field form-group">
+    <%= f.label :"eMail", class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.text_field :email, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Guardar', class: 'btn btn-default btn-sm' %>
+  </div>
+<% end %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  constancy_id: 1
+  date: 2017-03-15
+  description: MyString
+
+two:
+  constancy_id: 1
+  date: 2017-03-15
+  description: MyString

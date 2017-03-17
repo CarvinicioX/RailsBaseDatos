@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Constancy:</strong>
+  <%= @remission.constancy_id %>
+</p>
+
+<p>
+  <strong>Laboratory:</strong>
+  <%= @remission.laboratory_id %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @remission.date %>
+</p>
+
+<%= link_to 'Edit', edit_remission_path(@remission) %> |
+<%= link_to 'Back', remissions_path %>

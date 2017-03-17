@@ -1,0 +1,2 @@
+class Constancy < ApplicationRecord
+end

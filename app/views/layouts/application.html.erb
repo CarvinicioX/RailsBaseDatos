@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BaseDatos</title>
+		<%= csrf_meta_tags %>
+
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	</head>
+
+	<body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="row">
+        <div class="col-xs-12">
+          <a class="navbar-brand" href="/patients">Clinica</a>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-default" role="navigation" style="visibility: hidden">
+      <div class="container">
+        <div class="navbar-header">
+        </div>
+      </div>
+    </nav>
+		<div id="main-container" class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<%= yield %>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

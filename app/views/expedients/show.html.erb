@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Paciente:</strong>
+  <%= @expedient.patient_id %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @expedient.name %>
+</p>
+
+<p>
+  <strong>Apellido:</strong>
+  <%= @expedient.surname %>
+</p>
+
+<p>
+  <strong>Genero:</strong>
+  <%= @expedient.genre %>
+</p>
+
+<p>
+  <strong>Estado Civil:</strong>
+  <%= @expedient.civil_status %>
+</p>
+
+<p>
+  <strong>Lugar de Nacimiento:</strong>
+  <%= @expedient.birth_place %>
+</p>
+
+<p>
+  <strong>Fecha de Nacimiento:</strong>
+  <%= @expedient.birth_date %>
+</p>
+
+<p>
+  <strong>Ocupacion:</strong>
+  <%= @expedient.occupation %>
+</p>
+
+<p>
+  <strong>Tipo de Sangre:</strong>
+  <%= @expedient.blood_type %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @expedient.address %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @expedient.email %>
+</p>
+
+<%= link_to 'Modificar', edit_expedient_path(@expedient), class: 'btn btn-default btn-sm' %> |
+<%= link_to 'Atras', expedients_path, class: 'btn btn-default btn-sm' %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  constancy_id: 1
+  bill_id: 1
+  type: 
+  observation: MyString
+
+two:
+  constancy_id: 1
+  bill_id: 1
+  type: 
+  observation: MyString
