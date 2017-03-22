@@ -1,29 +1,29 @@
-<p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></div>
 
-<p>
+<div class="field form-group">
   <strong>Date:</strong>
   <%= @bill.date %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Subtotal:</strong>
   <%= @bill.subtotal %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Tax:</strong>
   <%= @bill.tax %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Discount:</strong>
   <%= @bill.discount %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Total:</strong>
   <%= @bill.total %>
-</p>
+</div>
 
-<%= link_to 'Edit', edit_bill_path(@bill) %> |
-<%= link_to 'Back', bills_path %>
+<%= link_to 'Edit', edit_bill_path(@bill), class: 'btn btn-default btn-sm' %> |
+<%= link_to 'Back', bills_path, class: 'btn btn-default btn-sm' %>
