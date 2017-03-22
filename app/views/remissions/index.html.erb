@@ -5,9 +5,9 @@
 <table>
   <thead>
     <tr>
-      <th>Constancy</th>
-      <th>Laboratory</th>
-      <th>Date</th>
+      <th class="col-xs-2">Constancias</th>
+      <th class="col-xs-7">Laboratorio</th>
+      <th class="col-xs-3">Fecha</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,9 +18,9 @@
         <td><%= remission.constancy_id %></td>
         <td><%= remission.laboratory_id %></td>
         <td><%= remission.date %></td>
-        <td><%= link_to 'Show', remission %></td>
-        <td><%= link_to 'Edit', edit_remission_path(remission) %></td>
-        <td><%= link_to 'Destroy', remission, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', remission, class: 'btn btn-default btn-sm' %></td>
+        <td><%= link_to 'Modificar', edit_remission_path(remission), class: 'btn btn-default btn-sm' %></td>
+        <td><%= link_to 'Eliminar', remission, method: :delete, data: { confirm: 'Está Seguro?' }, class: 'btn btn-default btn-sm' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Remission', new_remission_path %>
+<%= link_to 'Nueva Remision', new_remission_path, class: 'btn btn-default btn-sm' %>
