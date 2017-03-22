@@ -9,7 +9,10 @@
       <th class="col-xs-2">Apellido</th>
       <th class="col-xs-2">Direccion</th>
       <th class="col-xs-2">eMail</th>
-      <th class="col-xs-4">Acciones</th>
+      <th class="col-xs-1">Acciones</th>
+      <th class="col-xs-1"></th>
+      <th class="col-xs-1"></th>
+      <th class="col-xs-1"></th>
     </tr>
   </thead>
 

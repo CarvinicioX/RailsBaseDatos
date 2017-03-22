@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Laboratories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th class="col-xs-2">Name</th>
+      <th class="col-xs-7">Address</th>
+      <th class="col-xs-3">"Acciones"</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @laboratories.each do |laboratory| %>
+      <tr>
+        <td><%= laboratory.name %></td>
+        <td><%= laboratory.address %></td>
+        <td><%= link_to 'Mostrar', laboratory %></td>
+        <td><%= link_to 'Modificar', edit_laboratory_path(laboratory) %></td>
+        <td><%= link_to 'Eliminar', laboratory, method: :delete, data: { confirm: 'Está seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Agregar Laboratorio', new_laboratory_path %>

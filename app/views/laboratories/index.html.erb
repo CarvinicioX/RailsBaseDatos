@@ -2,12 +2,12 @@
 
 <h1>Laboratories</h1>
 
-<table>
+<table class="table table-striped table-hover">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Address</th>
-      <th colspan="3"></th>
+      <th class="col-xs-2">Name</th>
+      <th class="col-xs-7">Address</th>
+      <th class="col-xs-3">"Acciones"</th>
     </tr>
   </thead>
 
@@ -16,9 +16,9 @@
       <tr>
         <td><%= laboratory.name %></td>
         <td><%= laboratory.address %></td>
-        <td><%= link_to 'Show', laboratory %></td>
-        <td><%= link_to 'Edit', edit_laboratory_path(laboratory) %></td>
-        <td><%= link_to 'Destroy', laboratory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', laboratory, class: 'btn btn-default btn-sm' %></td>
+        <td><%= link_to 'Modificar', edit_laboratory_path(laboratory) , class: 'btn btn-default btn-sm' %></td>
+        <td><%= link_to 'Eliminar', laboratory, method: :delete, data: { confirm: 'Está seguro?' }, class: 'btn btn-default btn-sm' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Laboratory', new_laboratory_path %>
+<%= link_to 'Agregar Laboratorio', new_laboratory_path, class: 'btn btn-default btn-sm' %>
