@@ -2,15 +2,15 @@
 
 <h1>Laboratorios</h1>
 
-<p>
+<div class = "field form-group">
   <strong>Nombre:</strong>
   <%= @laboratory.name %>
-</p>
+</div>
 
-<p>
+<div class = "field form-group" >
   <strong>Direccion:</strong>
   <%= @laboratory.address %>
-</p>
+</div>
 
 <%= link_to 'Edit', edit_laboratory_path(@laboratory), class: 'btn btn-default btn-sm' %> |
 <%= link_to 'Back', laboratories_path, class: 'btn btn-default btn-sm' %>

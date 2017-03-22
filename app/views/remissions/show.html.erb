@@ -1,20 +1,19 @@
 <p id="notice"><%= notice %></p>
 <h1>Remisiones</h1>
 
-<p>
+<div class = "field form-group">
   <strong>Constancia:</strong>
   <%= @remission.constancy_id %>
-</p>
+</div>
 
-<p>
-  <strong>Laboratorio:</strong>
+<div class = "field form-group">
   <%= @remission.laboratory_id %>
-</p>
+</div>
 
-<p>
-  <strong>Fecha:</strong>
-  <%= @remission.date %>
-</p>
+<div class = "field form-group">
+  <strong>Fecha</strong>
+  <%= @remission.date, class: "form-control" %>
+</div>
 
 <%= link_to 'Edit', edit_remission_path(@remission), class: 'btn btn-default btn-sm' %> |
 <%= link_to 'Back', remissions_path, class: 'btn btn-default btn-sm' %>
