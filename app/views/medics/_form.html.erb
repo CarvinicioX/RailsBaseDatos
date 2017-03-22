@@ -12,26 +12,34 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.label :name, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
   </div>
 
   <div class="field">
-    <%= f.label :surname %>
-    <%= f.text_field :surname %>
+    <%= f.label :surname, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.text_field :surname, class: 'form-control' %>
+    </div>
   </div>
 
   <div class="field">
-    <%= f.label :birth_date %>
-    <%= f.date_select :birth_date %>
+    <%= f.label :birth_date, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-4">
+    <%= f.date_select :birth_date, {date_separator: "</div><div class='col-sm-3'>"}, class: 'form-control'%>
+    </div>
   </div>
 
   <div class="field">
-    <%= f.label :specialty %>
-    <%= f.text_field :specialty %>
+    <%= f.label :specialty, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+    <%= f.text_field :specialty, class: 'form-control' %>
+    </div>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Guardar', class: 'btn btn-default btn-sm' %>
   </div>
 <% end %>

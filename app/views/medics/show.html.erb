@@ -1,24 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<div class="field form-group">
   <strong>Name:</strong>
   <%= @medic.name %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Surname:</strong>
   <%= @medic.surname %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Birth date:</strong>
   <%= @medic.birth_date %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Specialty:</strong>
   <%= @medic.specialty %>
-</p>
+</div>
 
-<%= link_to 'Edit', edit_medic_path(@medic) %> |
-<%= link_to 'Back', medics_path %>
+<%= link_to 'Edit', edit_medic_path(@medic), class: 'btn btn-default btn-sm' %> |
+<%= link_to 'Back', medics_path, class: 'btn btn-default btn-sm' %>
