@@ -14,9 +14,9 @@
     <% @constancies.each do |constancy| %>
       <tr>
         <td><%= constancy.pacient_id %></td>
-        <td><%= link_to 'Show', constancy %></td>
-        <td><%= link_to 'Edit', edit_constancy_path(constancy) %></td>
-        <td><%= link_to 'Destroy', constancy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', constancy, class: 'btn btn-default btn-sm'  %></td>
+        <td><%= link_to 'Modificar', edit_constancy_path(constancy), class: 'btn btn-default btn-sm'  %></td>
+        <td><%= link_to 'Eliminar', constancy, method: :delete, data: { confirm: 'Está Seguro?' }, class: 'btn btn-default btn-sm'  %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Constancy', new_constancy_path %>
+<%= link_to 'Nueva Constancia', new_constancy_path, class: 'btn btn-default btn-sm'  %>
