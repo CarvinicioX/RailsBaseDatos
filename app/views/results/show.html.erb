@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<div class="field form-group">
   <strong>Constancy:</strong>
   <%= @result.constancy_id %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Date:</strong>
   <%= @result.date %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Description:</strong>
   <%= @result.description %>
-</p>
+</div>
 
-<%= link_to 'Edit', edit_result_path(@result) %> |
-<%= link_to 'Back', results_path %>
+<%= link_to 'Edit', edit_result_path(@result), class: 'btn btn-default btn-sm' %> |
+<%= link_to 'Back', results_path, class: 'btn btn-default btn-sm' %>

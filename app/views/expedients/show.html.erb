@@ -1,59 +1,59 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<div class="field form-group">
   <strong>Paciente:</strong>
   <%= @expedient.patient_id %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Nombre:</strong>
   <%= @expedient.name %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Apellido:</strong>
   <%= @expedient.surname %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Genero:</strong>
   <%= @expedient.genre %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Estado Civil:</strong>
   <%= @expedient.civil_status %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Lugar de Nacimiento:</strong>
   <%= @expedient.birth_place %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Fecha de Nacimiento:</strong>
   <%= @expedient.birth_date %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Ocupacion:</strong>
   <%= @expedient.occupation %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Tipo de Sangre:</strong>
   <%= @expedient.blood_type %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Direccion:</strong>
   <%= @expedient.address %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Email:</strong>
   <%= @expedient.email %>
-</p>
+</div>
 
 <%= link_to 'Modificar', edit_expedient_path(@expedient), class: 'btn btn-default btn-sm' %> |
 <%= link_to 'Atras', expedients_path, class: 'btn btn-default btn-sm' %>
