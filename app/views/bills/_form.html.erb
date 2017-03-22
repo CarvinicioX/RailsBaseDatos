@@ -12,31 +12,31 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :date %>
-    <%= f.date_select :date %>
+    <%= f.label :date, class: 'col-sm-2 control-label' %>
+    <%= f.date_select :date, {date_separator: "</div><div class='col-sm-3'>"}, class: 'form-control' %>
   </div>
 
   <div class="field">
-    <%= f.label :subtotal %>
-    <%= f.text_field :subtotal %>
+    <%= f.label :subtotal, class: 'col-sm-2 control-label' %>
+    <%= f.text_field :subtotal, class: 'form-control' %>
   </div>
 
   <div class="field">
-    <%= f.label :tax %>
-    <%= f.text_field :tax %>
+    <%= f.label :tax, class: 'col-sm-2 control-label' %>
+    <%= f.text_field :tax, class: 'form-control' %>
   </div>
 
   <div class="field">
-    <%= f.label :discount %>
-    <%= f.text_field :discount %>
+    <%= f.label :discount, class: 'col-sm-2 control-label' %>
+    <%= f.text_field :discount, class: 'form-control' %>
   </div>
 
   <div class="field">
-    <%= f.label :total %>
-    <%= f.text_field :total %>
+    <%= f.label :total, class: 'col-sm-2 control-label' %>
+    <%= f.text_field :total, class: 'form-control' %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Guardar', class: 'btn btn-default btn-sm' %>
   </div>
 <% end %>

@@ -1,29 +1,29 @@
-<p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></div>
 
-<p>
-  <strong>Date:</strong>
-  <%= @bill.date %>
-</p>
+<div class="field form-group">
+  <%= f.label :Fecha, class: 'col-sm-2 control-label'>
+  <%= @bill.date, class: 'form-control' %>
+</div>
 
-<p>
-  <strong>Subtotal:</strong>
-  <%= @bill.subtotal %>
-</p>
+<div class="field form-group">
+  <%= f.label :SubTotal, class: 'col-sm-2 control-label'>
+  <%= @bill.subtotal, class: 'form-control' %>
+</div>
 
-<p>
-  <strong>Tax:</strong>
-  <%= @bill.tax %>
-</p>
+<div class="field form-group">
+  <%= f.label :Impuesto, class: 'col-sm-2 control-label'>
+  <%= @bill.tax, class: 'form-control' %>
+</div>
 
-<p>
-  <strong>Discount:</strong>
-  <%= @bill.discount %>
-</p>
+<div class="field form-group">
+  <%= f.label :Descuento, class: 'col-sm-2 control-label'>
+  <%= @bill.discount, class: 'form-control' %>
+</div>
 
-<p>
-  <strong>Total:</strong>
-  <%= @bill.total %>
-</p>
+<div class="field form-group">
+  <%= f.label :Total, class: 'col-sm-2 control-label'>
+  <%= @bill.total, class: 'form-control' %>
+</div>
 
-<%= link_to 'Edit', edit_bill_path(@bill) %> |
-<%= link_to 'Back', bills_path %>
+<%= link_to 'Edit', edit_bill_path(@bill), class: 'btn btn-default btn-sm' %> |
+<%= link_to 'Back', bills_path, class: 'btn btn-default btn-sm' %>
