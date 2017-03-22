@@ -3,7 +3,7 @@ class CreateOrders < ActiveRecord::Migration[5.0]
     create_table :orders do |t|
       t.integer :constancy_id
       t.integer :bill_id
-      t.string :type
+      t.string :order_type
       t.string :observation
 
       t.timestamps

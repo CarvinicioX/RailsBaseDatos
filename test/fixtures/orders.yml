@@ -3,11 +3,11 @@
 one:
   constancy_id: 1
   bill_id: 1
-  type: 
+  order_type: MyString
   observation: MyString
 
 two:
   constancy_id: 1
   bill_id: 1
-  type: 
+  order_type: MyString
   observation: MyString

@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
+  resources :orders
   resources :expedients
   resources :bills
   resources :remissions
-  resources :orders
   resources :results
   resources :constancies
   resources :laboratories

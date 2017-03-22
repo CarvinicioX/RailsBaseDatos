@@ -5,11 +5,13 @@
 <table class="table table-striped table-hover">
   <thead>
     <tr>
-      <th class="col-xs-3">>Constancy</th>
-      <th class="col-xs-3">>Bill</th>
-      <th class="col-xs-3">>Type</th>
-      <th class="col-xs-3">>Observation</th>
-      <th colspan="3"></th>
+      <th class="col-xs-1">Constancy</th>
+      <th class="col-xs-1">Bill</th>
+      <th class="col-xs-1">Type</th>
+      <th class="col-xs-6">Observation</th>
+      <th class="col-xs-1">Acciones</th>
+      <th class="col-xs-1"></th>
+      <th class="col-xs-1"></th>
     </tr>
   </thead>
 
@@ -18,10 +20,10 @@
       <tr>
         <td><%= order.constancy_id %></td>
         <td><%= order.bill_id %></td>
-        <td><%= order.type %></td>
+        <td><%= order.order_type %></td>
         <td><%= order.observation %></td>
         <td><%= link_to 'Show', order, class: 'btn btn-default btn-sm' %></td>
-        <td><%= link_to 'Edit', edit_order_path(order) %></td>
+        <td><%= link_to 'Edit', edit_order_path(order), class: 'btn btn-default btn-sm' %></td>
         <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default btn-sm' %></td>
       </tr>
     <% end %>
