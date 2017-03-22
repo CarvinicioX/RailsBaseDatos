@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<div class="field form-group">
   <strong>Patient:</strong>
   <%= @phone_number.patient %>
-</p>
+</div>
 
-<p>
+<div class="field form-group">
   <strong>Phone number:</strong>
   <%= @phone_number.phone_number %>
-</p>
+</div>
 
-<%= link_to 'Edit', edit_phone_number_path(@phone_number) %> |
-<%= link_to 'Back', phone_numbers_path %>
+<%= link_to 'Edit', edit_phone_number_path(@phone_number), class: 'btn btn-default btn-sm' %> |
+<%= link_to 'Back', phone_numbers_path, class: 'btn btn-default btn-sm' %>
