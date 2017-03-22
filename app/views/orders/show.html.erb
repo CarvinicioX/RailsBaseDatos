@@ -1,24 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<div div class="field form-group">
   <strong>Constancy:</strong>
   <%= @order.constancy_id %>
-</p>
+</div>
 
-<p>
+<div div class="field form-group">
   <strong>Bill:</strong>
   <%= @order.bill_id %>
-</p>
+</div>
 
-<p>
+<div div class="field form-group">
   <strong>Type:</strong>
   <%= @order.type %>
-</p>
+</div>
 
-<p>
+<div div class="field form-group">
   <strong>Observation:</strong>
   <%= @order.observation %>
-</p>
+</div>
 
-<%= link_to 'Edit', edit_order_path(@order) %> |
-<%= link_to 'Back', orders_path %>
+<%= link_to 'Edit', edit_order_path(@order), class: 'btn btn-default btn-sm' %> |
+<%= link_to 'Back', orders_path, class: 'btn btn-default btn-sm' %>

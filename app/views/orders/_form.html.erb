@@ -12,26 +12,34 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :constancy_id %>
-    <%= f.number_field :constancy_id %>
+    <%= f.label :constancy_id , class: 'col-sm-2 control-label'%>
+    <div class="col-sm-10">
+      <%= f.number_field :constancy_id, class: 'form-control' %>
+    </div>
   </div>
 
   <div class="field">
-    <%= f.label :bill_id %>
-    <%= f.number_field :bill_id %>
+    <%= f.label :bill_id, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+     <%= f.number_field :bill_id %>
+    </div>
   </div>
 
   <div class="field">
-    <%= f.label :type %>
-    <%= f.text_field :type %>
+    <%= f.label :type, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.text_field :type %>
+    </div>
   </div>
 
   <div class="field">
-    <%= f.label :observation %>
-    <%= f.text_field :observation %>
+    <%= f.label :observation, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.text_field :observation %>
+    </div>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Guardar', class: 'btn btn-default btn-sm' %>
   </div>
 <% end %>
