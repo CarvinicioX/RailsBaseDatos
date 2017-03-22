@@ -1,9 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+<h1>Constancias</h1>
+
 <p>
-  <strong>Pacient:</strong>
+  <strong>Paciente:</strong>
   <%= @constancy.pacient_id %>
 </p>
 
-<%= link_to 'Edit', edit_constancy_path(@constancy) %> |
-<%= link_to 'Back', constancies_path %>
+<%= link_to 'Edit', edit_constancy_path(@constancy), class: 'btn btn-default btn-sm' %> |
+<%= link_to 'Back', constancies_path, class: 'btn btn-default btn-sm' %>

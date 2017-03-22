@@ -1,14 +1,16 @@
 <p id="notice"><%= notice %></p>
 
+<h1>Laboratorios</h1>
+
 <p>
-  <strong>Name:</strong>
+  <strong>Nombre:</strong>
   <%= @laboratory.name %>
 </p>
 
 <p>
-  <strong>Address:</strong>
+  <strong>Direccion:</strong>
   <%= @laboratory.address %>
 </p>
 
-<%= link_to 'Edit', edit_laboratory_path(@laboratory) %> |
-<%= link_to 'Back', laboratories_path %>
+<%= link_to 'Edit', edit_laboratory_path(@laboratory), class: 'btn btn-default btn-sm' %> |
+<%= link_to 'Back', laboratories_path, class: 'btn btn-default btn-sm' %>
